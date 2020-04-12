@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  cmd="$(rvm gemdir)/bin/asciidoctor"
+else
+  cmd="/usr/bin/asciidoctor"
+fi
+$cmd -r asciidoctor-html5s -b html5s -r asciidoctor-diagram -a icons=font -a :sectnums -a imagesdir=../ "$@"

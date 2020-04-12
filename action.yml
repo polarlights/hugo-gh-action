@@ -1,6 +1,6 @@
 # action.yml
-name: 'Hugo Asciidoctor Action'
-description: 'Action to generate static website using hugo by supporting AsciiDoc format'
+name: 'Hugo Asciidoctor Html Action'
+description: 'Action to generate static website using hugo by supporting AsciiDoc html output'
 runs:
   using: 'docker'
   image: 'Dockerfile'
